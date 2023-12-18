@@ -20,7 +20,7 @@ get_requirements()
 
 
 setup(
-    name= "Air Pressure System Sensor Fault Prediction",
+    name= "Air Pressure System Sensor Fault Detection",
     version= "0.0.1",
     author= "SHIVANG",
     author_email= "shivang.cse.nitnagaland@gmail.com",
