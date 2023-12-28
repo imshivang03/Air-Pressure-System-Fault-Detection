@@ -1,11 +1,15 @@
 from sensor.logger import logging
 from sensor.exception import SensorException
+from sensor.utils import get_collection_as_dataframe
 import sys, os
+from sensor.entity import config_entity
 
 
 if __name__== "__main__":
      try:
-          pass
-
+          training_pipeline_config= config_entity.TrainingPipelineConfig()
+          data_ingesttion_config= config_entity.DataIngestionConfig(training_pipeline_config=  training_pipeline_config)
+          print(data_ingesttion_config.to_dict())
+     
      except Exception as e:
           print(e)
